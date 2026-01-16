@@ -26,6 +26,9 @@ void Clinic::addTest(const Test& test) {
 };
 
 std::ostream& operator<<(std::ostream& os, const Clinic& c) {
-
+	os << "Tests : " << std::endl;
+	for (const Test& t : c.getTests()) {
+		os << t;
+	}
 	return os;
 };
