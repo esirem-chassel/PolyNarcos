@@ -15,3 +15,9 @@ std::string Patient::getFullName() const {
 std::string Patient::getDateBirth() const {
 	return this->dateBirth;
 };
+
+std::ostream& operator<<(std::ostream& os, const Patient& p) {
+	os << p.getFullName() << " - " << p.getNumSecu() << " (birthdate: " << p.getDateBirth() << ")";
+	return os;
+};
+
