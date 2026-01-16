@@ -17,7 +17,7 @@ void Clinic::createPatient(std::string numSecu, std::string fullName, std::strin
 	if (p == nullptr) {
 		this->patients.push_back(Patient(numSecu, fullName, dateBirth));
 	} else {
-		throw std::invalid_argument("Patient already exists !");
+		throw std::invalid_argument("Patient '" + numSecu + "' already exists !");
 	}
 };
 
