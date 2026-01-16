@@ -33,3 +33,8 @@ void Test::setO2(int o2)
 {
 	this->o2 = o2;
 }
+
+std::ostream& operator<<(std::ostream& os, const Test& t) {
+	os << "Patient " << (*t.getPatient()) << " at " << t.getDate() << " | Pulse=" << t.getPulse() << " | o2=" << t.getO2();
+	return os;
+};

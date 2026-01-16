@@ -1,4 +1,5 @@
 #pragma once
+#include <ostream>
 #include "Patient.h"
 
 class Test {
@@ -15,4 +16,5 @@ public:
 	int getO2() const;
 	void setPulse(int pulse);
 	void setO2(int o2);
+	friend std::ostream& operator<<(std::ostream& os, const Test& t);
 };
