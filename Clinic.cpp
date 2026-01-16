@@ -13,12 +13,24 @@ std::vector<Patient> Clinic::getPatients() const {
 };
 
 void Clinic::createPatient(std::string numSecu, std::string fullName, std::string dateBirth) {
-	// @TODO : vérif unicité
-	this->patients.push_back(Patient(numSecu, fullName, dateBirth));
+	Patient* p = this->findPatient(numSecu);
+	if (p == nullptr) {
+		this->patients.push_back(Patient(numSecu, fullName, dateBirth));
+	} else {
+		throw std::invalid_argument("Patient already exists !");
+	}
 };
 
-Patient* findPatient(std::string numSeco) {
-	return nullptr;
+Patient* Clinic::findPatient(std::string numSecu) {
+	Patient* p = nullptr;
+	int i = 0;
+	for (Patient p2 : this->patients) {
+		if (p2.getNumSecu() == numSecu) {
+			p = &(*(this->patients.begin() + i));
+		}
+		i++;
+	}
+	return p;
 };
 
 void Clinic::addTest(const Test& test) {
