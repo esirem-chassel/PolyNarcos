@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36705.20 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PolyNarcos", "PolyNarcos.vcxproj", "{774A1B59-9BAF-4A78-9061-7EE3130E664F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{774A1B59-9BAF-4A78-9061-7EE3130E664F}.Debug|x64.ActiveCfg = Debug|x64
+		{774A1B59-9BAF-4A78-9061-7EE3130E664F}.Debug|x64.Build.0 = Debug|x64
+		{774A1B59-9BAF-4A78-9061-7EE3130E664F}.Debug|x86.ActiveCfg = Debug|Win32
+		{774A1B59-9BAF-4A78-9061-7EE3130E664F}.Debug|x86.Build.0 = Debug|Win32
+		{774A1B59-9BAF-4A78-9061-7EE3130E664F}.Release|x64.ActiveCfg = Release|x64
+		{774A1B59-9BAF-4A78-9061-7EE3130E664F}.Release|x64.Build.0 = Release|x64
+		{774A1B59-9BAF-4A78-9061-7EE3130E664F}.Release|x86.ActiveCfg = Release|Win32
+		{774A1B59-9BAF-4A78-9061-7EE3130E664F}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B3C2708E-6751-4F9A-BB13-162C3FED9055}
+	EndGlobalSection
+EndGlobal
